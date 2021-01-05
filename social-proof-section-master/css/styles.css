@@ -1,5 +1,5 @@
 body{
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
   font-size: 12px;
   font-family: 'Spartan', sans-serif;
@@ -35,6 +35,10 @@ h1{
   margin: 70px 120px 0px 300px;
 }
 
+.description{
+  margin-left: 15px;
+}
+
 .tagline{
   color: hsl(303, 10%, 53%);
   font-weight: 500;
@@ -42,7 +46,7 @@ h1{
 }
 
 .rating-container{
-  margin-left: 20px;
+  margin-left: 200px;
   margin-top: 10px;
 }
 
@@ -128,4 +132,17 @@ h1{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 376px){
+  body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: yellow;
+    max-width: 376px;
+  }
+
+  h1{
+    text-align: center;
+  }
 }
